@@ -1,3 +1,5 @@
+var fs = require('fs');
+
 function Loggingtofile(logFile) {
   this.logFile = logFile;
   this.writeStream = fs.createWriteStream(this.logFile, {flags: 'w'});

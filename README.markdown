@@ -19,7 +19,7 @@ var logger = new Loggingtofile('output.txt');
 logger.log('This is a log message.');
 
 // Override console.log
-console.log = k.log;
+console.log = logger.log;
 
 // Will be logged to the 'output.txt' file
 console.log('This is a console.log message.');
